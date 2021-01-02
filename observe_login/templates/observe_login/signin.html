@@ -1,0 +1,11 @@
+
+
+<h3>Sign In</h3>
+
+<form action="{% url 'observe_login:signin' %}" method='POST'>{% csrf_token %}
+    <label for="email">email</label>
+    <input id="email" type="email" name="email"/>
+    <label for="password">password</label>
+    <input type="password" name="password"/>
+    <button>ログイン</button>
+</form>
